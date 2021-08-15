@@ -41,3 +41,8 @@
   font-family: "Inter";
   border-radius: 3px;
 }
+
+.heading {
+  text-align: center;
+  margin-bottom: 30px;
+}

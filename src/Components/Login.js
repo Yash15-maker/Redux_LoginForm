@@ -4,6 +4,8 @@ import "./Login.css";
 import { login, logout } from "../features/userSlice";
 import { useDispatch } from "react-redux";
 
+
+
 const Login = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
@@ -29,25 +31,31 @@ const Login = () => {
 
   return (
     <div className="login">
+      <h1 className="heading">
+    Basic Redux Login App 
+  </h1>
       <form className="login__form" onSubmit={(e) => handleSubmit(e)}>
-        <h1>Login here 🚪</h1>
+        <h1>Login here </h1>
         <input
           type="name"
           placeholder="Name"
           value={name}
           onChange={(e) => setName(e.target.value)}
+          required
         />
         <input
           type="email"
           value={email}
           placeholder="Email"
           onChange={(e) => setEmail(e.target.value)}
+          required
         />
         <input
           type="password"
           value={password}
           placeholder="Password"
           onChange={(e) => setPassword(e.target.value)}
+          required
         />
         <button type="submit" className="submit__btn">
           Submit

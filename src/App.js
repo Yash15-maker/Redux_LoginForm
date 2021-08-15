@@ -10,6 +10,8 @@ const App = () => {
   const user = useSelector(selectUser);
   console.log(user);
 
+  
+
   return <div>{user ? <Logout /> : <Login />}</div>;
 };
 
